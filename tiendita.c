@@ -68,10 +68,22 @@ void showProducts(Product* head){
     }
 }
 
+// Menú
+void showMenu(){
+    printf("     Bienvenido al menú     \n");
+    printf(" Selecciona una opción de acuerdo a lo que desees hacer:\n ");
+    printf("1.- Ver mi carrito de compras.\n ");
+    printf("2.- Ver mi información de usuario.\n ");
+    printf("3.- Ver la lista de productos.\n ");
+    printf("4.- Salir.\n ");
+}
+
 int main (){
+    showMenu();
 
     Product* productos = loadProducts("products.txt");
     showProducts(productos);
+
 
 
     return 0;
